@@ -1,0 +1,31 @@
+.flex {
+    @include display(flex);
+}
+
+.direction-column {
+    @include flex-direction(column);
+}
+
+.direction-row {
+    @include flex-direction(row);
+}
+
+.justify-center {
+    @include justify-content(center);
+}
+
+.justify-space-around {
+    @include justify-content(space-around);
+}
+
+.justify-space-between {
+    @include justify-content(space-between);
+}
+
+.justify-space-evenly {
+    @include justify-content(space-evenly);
+}
+
+.align-center {
+    @include align-items(center);
+}
