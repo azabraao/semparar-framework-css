@@ -442,6 +442,14 @@ th {
   margin-left: 2rem;
 }
 
+.m-1rem {
+  margin: 1rem;
+}
+
+.m-2rem {
+  margin: 2rem;
+}
+
 .p-top-1rem {
   padding-top: 1rem;
 }
@@ -472,5 +480,13 @@ th {
 
 .p-left-2rem {
   padding-left: 2rem;
+}
+
+.p-1rem {
+  padding: 1rem;
+}
+
+.p-2rem {
+  padding: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

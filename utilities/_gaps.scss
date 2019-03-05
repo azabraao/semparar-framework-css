@@ -24,6 +24,14 @@ $twoRem: (
     }
 }
 
+.m-1rem {
+    margin: 1rem;
+}
+
+.m-2rem {
+    margin: 2rem;
+}
+
 @each $item in $oneRem {
     .p-#{nth($item,1)}-#{nth($item,2)} {
         padding-#{nth($item,1)}: nth($item,2)
@@ -34,4 +42,12 @@ $twoRem: (
     .p-#{nth($item,1)}-#{nth($item,2)} {
         padding-#{nth($item,1)}: nth($item,2)
     }
+}
+
+.p-1rem {
+    padding: 1rem;
+}
+
+.p-2rem {
+    padding: 2rem;
 }
