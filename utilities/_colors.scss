@@ -30,6 +30,6 @@ $colors: (
 
 @each $item in $colors {
     .color-#{nth($item,1)} {
-        background-color: nth($item,2);
+        color: nth($item,2);
     }
 }

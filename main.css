@@ -153,83 +153,83 @@
 }
 
 .color-primary {
-  background-color: #f26d61;
+  color: #f26d61;
 }
 
 .color-primary-dark {
-  background-color: #B25047;
+  color: #B25047;
 }
 
 .color-primary-light {
-  background-color: #FF7366;
+  color: #FF7366;
 }
 
 .color-secondary {
-  background-color: #41BB96;
+  color: #41BB96;
 }
 
 .color-secondary-dark {
-  background-color: #B25047;
+  color: #B25047;
 }
 
 .color-secondary-light {
-  background-color: #45C8A0;
+  color: #45C8A0;
 }
 
 .color-transparent {
-  background-color: transparent;
+  color: transparent;
 }
 
 .color-black {
-  background-color: #000;
+  color: #000;
 }
 
 .color-white {
-  background-color: #fff;
+  color: #fff;
 }
 
 .color-dark {
-  background-color: #222;
+  color: #222;
 }
 
 .color-grey {
-  background-color: #d5d5d5;
+  color: #d5d5d5;
 }
 
 .color-grey-dark {
-  background-color: #3a3837;
+  color: #3a3837;
 }
 
 .color-grey-light {
-  background-color: #eeeeee;
+  color: #eeeeee;
 }
 
 .color-grey-lighter {
-  background-color: #f3f3f3;
+  color: #f3f3f3;
 }
 
 .color-warning {
-  background-color: #FF9F1C;
+  color: #FF9F1C;
 }
 
 .color-warning-dark {
-  background-color: #B26B0A;
+  color: #B26B0A;
 }
 
 .color-watning-light {
-  background-color: #FFAA35;
+  color: #FFAA35;
 }
 
 .color-link {
-  background-color: #164C8E;
+  color: #164C8E;
 }
 
 .color-link-dark {
-  background-color: #0A2342;
+  color: #0A2342;
 }
 
 .color-link-light {
-  background-color: #1F6DCE;
+  color: #1F6DCE;
 }
 
 .font-smaller {
