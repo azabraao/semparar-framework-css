@@ -4,112 +4,6 @@
   src: url("https://semparar.vteximg.com.br/arquivos/Vanguard-CF-Extra-Bold-Oblique.otf.css");
 }
 
-/*! minireset.css v0.0.4 | MIT License | github.com/jgthms/minireset.css */
-html,
-body,
-p,
-ol,
-ul,
-li,
-dl,
-dt,
-dd,
-blockquote,
-figure,
-fieldset,
-legend,
-textarea,
-pre,
-iframe,
-hr,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 100%;
-  font-weight: normal;
-}
-
-ul {
-  list-style: none;
-}
-
-button,
-input,
-select,
-textarea {
-  margin: 0;
-}
-
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-img,
-embed,
-iframe,
-object,
-video {
-  height: auto;
-  max-width: 100%;
-}
-
-audio {
-  max-width: 100%;
-}
-
-iframe {
-  border: 0;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td,
-th {
-  padding: 0;
-  text-align: left;
-}
-
-.footer {
-  padding: 3rem 0;
-}
-
-.section {
-  padding: 3rem 0;
-}
-
-@media (min-width: 48rem) {
-  .section {
-    padding: 5rem 0rem;
-  }
-}
-
-.section__header {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
 .border-1px {
   border: 1px solid;
 }
@@ -488,5 +382,300 @@ th {
 
 .p-2rem {
   padding: 2rem;
+}
+
+/*! minireset.css v0.0.4 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img,
+embed,
+iframe,
+object,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+audio {
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+  text-align: left;
+}
+
+.navbar {
+  padding: 1rem 0;
+  height: 5rem;
+}
+
+.navbar .container {
+  height: 100%;
+}
+
+.navbar .logo {
+  height: 100%;
+}
+
+.navbar .logo img {
+  max-height: 100%;
+}
+
+.navbar .logo--twice {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.navbar .logo--twice img {
+  max-height: 100%;
+}
+
+.navbar .logo--twice .logo__1 {
+  margin-right: 1.3rem;
+}
+
+.navbar .logo--twice .logo__2 {
+  margin-left: 1.3rem;
+}
+
+@media only screen and (min-width: 48rem) {
+  .navbar .logo--twice {
+    -webkit-box-pack: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+.button {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #eeeeee;
+  width: 17rem;
+  text-align: center;
+  color: #d5d5d5;
+  padding: 1rem;
+  border-radius: .25rem;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #d5d5d5;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.button--black {
+  background-color: #000;
+  color: #f26d61;
+  border: 0.15rem solid #000;
+}
+
+.button--black:hover {
+  background-color: #222;
+}
+
+.button--black-outlined {
+  background-color: transparent;
+  border: 0.15rem solid #000;
+}
+
+.button--black-outlined:hover {
+  background-color: transparent;
+}
+
+.button--primary {
+  background-color: #f26d61;
+  color: #fff;
+  border: 0.15rem solid #f26d61;
+}
+
+.button--primary:hover {
+  background-color: #B25047;
+  color: #fff;
+  border: 0.15rem solid #B25047;
+}
+
+.button--secondary {
+  background-color: #41BB96;
+  color: #fff;
+}
+
+.button--secondary:hover {
+  background-color: #04625d;
+}
+
+.button--secondary:active {
+  background-color: #153B30;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+@media only screen and (min-width: 48rem) {
+  .container {
+    padding: 0;
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 62rem) {
+  .container {
+    padding: 0 5rem;
+    width: unset;
+  }
+}
+
+@media only screen and (min-width: 75rem) {
+  .container {
+    padding: 0;
+    position: relative;
+    margin: 0 auto;
+    width: 60rem;
+  }
+}
+
+.content p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.columns .column {
+  display: inline-block;
+  margin: .75rem;
+}
+
+@media only screen and (min-width: 48rem) {
+  .columns {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .columns .half {
+    width: 50%;
+  }
+  .columns .one-third {
+    width: 33.33333%;
+  }
+  .columns .two-thirds {
+    width: 66.66667%;
+  }
+}
+
+.footer {
+  padding: 3rem 0;
+}
+
+.section {
+  padding: 3rem 0;
+}
+
+@media (min-width: 48rem) {
+  .section {
+    padding: 5rem 0rem;
+  }
+}
+
+.section__header {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
