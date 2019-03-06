@@ -1,0 +1,30 @@
+.columns {
+    @include display(flex);
+    @include flex-direction(column);
+    @include align-items(center);
+    
+    .column {
+        display: inline-block;
+        margin: .75rem;
+    }
+}
+
+@media only screen and (min-width: $mobile-up) {
+    .columns {
+        @include flex-direction(row);
+        @include align-items(center);
+        @include justify-content(center);
+        
+        .half {
+            width: 50%;
+        }
+
+        .one-third {
+            width: (100% / 3);
+        }
+        
+        .two-thirds {
+            width: (100% / 3) * 2;
+        }
+    }
+}
