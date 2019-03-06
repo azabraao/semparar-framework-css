@@ -471,6 +471,22 @@ th {
   text-align: left;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+a,
+span,
+p,
+time,
+strong,
+b {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
 .navbar {
   padding: 1rem 0;
 }
