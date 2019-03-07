@@ -29,3 +29,17 @@
 .align-center {
     @include align-items(center);
 }
+
+.align-flex-start {
+    @include align-items(flex-start);
+}
+
+.align-center--mob {
+    @include align-items(center);
+}
+
+@media only screen and (min-width: $mobile-up) {
+    .align-center--mob {
+        @include align-items(unset);
+    }
+}
