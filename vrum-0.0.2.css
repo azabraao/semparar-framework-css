@@ -717,7 +717,7 @@ b {
   flex-direction: column;
   margin-bottom: 4.3rem;
   text-align: center;
-  width: 14.06rem;
+  width: 15.06rem;
 }
 
 .steps .step__item:last-child {
@@ -750,11 +750,18 @@ b {
   top: -0.93rem;
   left: -0.93rem;
   background: #a2c755;
-  color: #000;
+  color: #fff;
   padding: .2em;
   font-weight: bold;
   width: 1.8rem;
   height: 1.8rem;
+}
+
+.steps .step__text {
+  width: 12.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 @media only screen and (min-width: 48rem) {
@@ -767,9 +774,9 @@ b {
     -moz-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: space-between;
-    -ms-flex-pack: space-between;
-    justify-content: space-between;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin: 0 auto;
   }
   .steps .step__item {
@@ -781,9 +788,6 @@ b {
   .steps {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
   }
   .steps .step__item {
     margin-bottom: 3rem;

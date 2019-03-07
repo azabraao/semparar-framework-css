@@ -12,7 +12,7 @@
         @include flex-direction(column);
         margin-bottom: 4.3rem;
         text-align: center;
-        width: 14.06rem;
+        width: 15.06rem;
     }
     
     .step__item:last-child {
@@ -39,11 +39,16 @@
         top: -0.93rem;
         left: -0.93rem;
         background: $primary;
-        color: $black;
+        color: $white;
         padding: .2em;
         font-weight: bold;
         width: 1.8rem;
         height: 1.8rem;
+    }
+    
+    .step__text {
+        width: 12.5rem;
+        align-self: center;
     }
 }
 
@@ -51,7 +56,7 @@
     .steps {
         @include align-items(flex-start);
         @include flex-direction(row);
-        @include justify-content(space-between);
+        @include justify-content(center);
         margin: 0 auto;
         
         .step__item {
@@ -63,8 +68,7 @@
 @media only screen and (min-width: $mobile-up) and (max-width: $desktop-up) {
     .steps {
         @include flex-wrap(wrap);
-        @include justify-content(center);
-
+        
         .step__item {
             margin-bottom: 3rem;
             width: 18rem;
