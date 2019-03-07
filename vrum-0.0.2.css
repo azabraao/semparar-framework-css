@@ -688,6 +688,11 @@ b {
   margin-bottom: 1rem;
 }
 
+.icon {
+  max-width: 3.12rem;
+  height: auto;
+}
+
 /* Steps tutorial */
 .steps {
   display: -webkit-box;
