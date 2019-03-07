@@ -1,0 +1,61 @@
+/* Steps tutorial */
+
+.steps {
+    @include display(flex);
+    @include flex-direction(column);
+    @include align-items(center);
+    width: auto;
+    padding-top: 4rem;
+    
+    .step__item {
+        @include display(flex);
+        @include flex-direction(column);
+        margin-bottom: 4.3rem;
+        text-align: center;
+        width: 14.06rem;
+    }
+    
+    .step__item:last-child {
+        margin-bottom: 0;
+    }
+    
+    .step__tile {
+        @include display(flex);
+        @include justify-content(center);
+        @include align-items(center);
+        border-radius: 0.62rem;
+        border: .1rem solid $grey-dark;
+        width: 9.37rem;
+        height: 9.37rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.25rem;
+        position: relative;
+    }
+    
+    .step__number {
+        font-family: $font-secondary;
+        position: absolute;
+        top: -0.93rem;
+        left: -0.93rem;
+        background: $primary;
+        color: $black;
+        padding: .2em;
+        font-weight: bold;
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+}
+
+@media (min-width: $mobile-up) {
+    .steps {
+        @include align-items(flex-start);
+        @include flex-direction(row);
+        @include justify-content(space-between);
+        margin: 0 auto;
+        
+        .step__item {
+            margin-bottom: 0;
+        }
+    }
+}
