@@ -545,14 +545,10 @@ b {
 }
 
 .navbar {
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 .navbar .container {
-  height: 100%;
-}
-
-.navbar .logo {
   height: 100%;
 }
 
