@@ -14,7 +14,6 @@
     .columns {
         @include flex-direction(row);
         @include align-items(center);
-        @include justify-content(center);
         
         .half {
             width: 50%;
