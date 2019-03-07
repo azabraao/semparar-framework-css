@@ -1,5 +1,5 @@
 // Change Theme
-$primary-name: "danger";
+$primary-name: "success";
 
 // Handling with Sass scope issue
 $primary:""; $primary-light:""; $primary-dark:""; $primary-darker:"";
@@ -16,7 +16,7 @@ $secondary:""; $secondary-light:""; $secondary-dark:""; $secondary-darker:"";
     $secondary-dark: #04625d;
     $secondary-darker: #153B30;
 } @else if $primary-name == "success" {
-    $primary: #41BB96;
+    $primary: #a2c755;
     $primary-light: #45C8A0;
     $primary-dark: #04625d;
     $primary-darker: #153B30;
