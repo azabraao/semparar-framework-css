@@ -88,3 +88,9 @@
     -webkit-box-shadow: $content;
             box-shadow: $content;    
 }
+
+@mixin rotate($degree) {
+    -webkit-transform: rotate($degree);
+        -ms-transform: rotate($degree);
+            transform: rotate($degree);
+}
