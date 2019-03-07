@@ -16,3 +16,8 @@ strong,
 b {
     font-family: $font-secondary;
 }
+
+* {
+    transition: .2s;
+    scroll-behavior: smooth;
+}
