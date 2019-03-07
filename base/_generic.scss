@@ -3,7 +3,10 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+    font-family: $font-primary;
+}
+
 div,
 a,
 span,
@@ -11,5 +14,5 @@ p,
 time,
 strong,
 b {
-    font-family: $open-sans;
+    font-family: $font-secondary;
 }
