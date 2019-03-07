@@ -424,6 +424,14 @@
   width: 100%;
 }
 
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
 /*! minireset.css v0.0.4 | MIT License | github.com/jgthms/minireset.css */
 html,
 body,
@@ -528,6 +536,12 @@ time,
 strong,
 b {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+* {
+  -webkit-transition: .2s;
+  transition: .2s;
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -742,7 +756,7 @@ b {
   height: 1.8rem;
 }
 
-@media (min-width: 48rem) {
+@media only screen and (min-width: 48rem) {
   .steps {
     -webkit-box-align: flex-start;
     -ms-flex-align: flex-start;
@@ -759,6 +773,20 @@ b {
   }
   .steps .step__item {
     margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 48rem) and (max-width: 62rem) {
+  .steps {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .steps .step__item {
+    margin-bottom: 3rem;
+    width: 18rem;
   }
 }
 
@@ -877,4 +905,4 @@ b {
     width: 3.125rem;
   }
 }
-/*# sourceMappingURL=vrum-0.0.1.css.map */
+/*# sourceMappingURL=vrum-0.0.2.css.map */

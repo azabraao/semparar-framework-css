@@ -47,7 +47,7 @@
     }
 }
 
-@media (min-width: $mobile-up) {
+@media only screen and (min-width: $mobile-up) {
     .steps {
         @include align-items(flex-start);
         @include flex-direction(row);
@@ -56,6 +56,18 @@
         
         .step__item {
             margin-bottom: 0;
+        }
+    }
+}
+
+@media only screen and (min-width: $mobile-up) and (max-width: $desktop-up) {
+    .steps {
+        @include flex-wrap(wrap);
+        @include justify-content(center);
+
+        .step__item {
+            margin-bottom: 3rem;
+            width: 18rem;
         }
     }
 }
