@@ -1,21 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Abastece - Sem Parar</title>
-    <link rel="stylesheet" href="vrum-1.1.0.css">
+    <link rel="stylesheet" href="vrum.css">
+    <title>Abastece Carrefour - Sem Parar</title>
+    <!-- Simulating custom css -->
+    <style>
+     
+        .mobile-viewport {
+            max-width: 13.7rem;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .rotate-mobile {
+                transform: rotate(90deg);
+                margin: 4.3rem;
+            }
+        }
+
+        /* Disclaimer */
+        .disclaimer {
+            padding: 0rem 0 5rem 0;
+        }
+    </style>
 </head>
 <body>
-    <section class="section">
+    <header class="header bg-grey">
+        <nav class="navbar flex justify-center align-center bg-white">
+            <img src="https://placehold.it/100x100" class="m-left-1rem m-right-1rem" alt="Logotipo Sem Parar">
+            <img src="https://placehold.it/100x100" class="m-left-1rem m-right-1rem" alt="Logo Carrefour">
+        </nav>
         <div class="container">
-            <h2 class="text-uppercase color-primary font-bold text-centered font-size-4">Esquenta carnaval com desconto especial!</h2>
-            <p class="text-centered font-size-5">
+            <div class="banner p-top-2rem p-bottom-2rem">
+                <img src="https://placehold.it/1061x485/d5d5d5" alt="">
+            </div>
+        </div>
+    </header>
+    <section class="section bg-grey-lighter">
+        <div class="container">
+            <h2 class="color-primary font-bold text-centered font-size-4">O Sem Parar está cheio de novidades.</h2>
+            <p class="text-centered font-size-5 m-bottom-2rem">
                 Agora você também <span class="font-bold color-link">abastece no posto Carrefour da Rodovia Raposo Tavares </span>
                 com o seu Sem Parar. Preço baixo e muito mais comodidade para você!
             </p>
+
+            <div class="flex direction-column--mob">
+                <div class="m-1rem flex justify-center direction-column align-center">
+                    <img src="http://landing.semparar.com.br/carnaval/assets/images/abastece/icone-como.png" alt="">
+                    <p class="text-uppercase font-bold m-top-1rem color-primary text-centered">Vá ao posto</p>
+                    <p class="text-centered mobile-viewport">Vá a um dos postos que aceita Sem Parar até dia <b>28/02</b></p>
+                    <a href="#mapa" class="color-black">(Confira aqui)</a>
+                </div>
+                <div class="flex justify-center align-center m-bottom-2rem rotate-mobile">
+                    <img src="http://landing.semparar.com.br/carnaval/assets/images/abastece/seta.png" class="">
+                </div>
+                <div class="m-1rem flex justify-center direction-column align-center">
+                    <img src="http://landing.semparar.com.br/carnaval/assets/images/abastece/icone-bomba.png" alt="">
+                    <p class="text-uppercase font-bold m-top-1rem color-primary text-centered">Abasteça o valor que preferir</p>
+                    <p class="mobile-viewport text-centered">Quanto mais abastecer,<span class="font-bold">mais desconto você ganha <a href="#disclaimer" class="color-black">*</a></span></p>
+                </div>
+                <div class="flex justify-center align-center m-bottom-2rem">
+                    <img src="http://landing.semparar.com.br/carnaval/assets/images/abastece/seta.png" class="rotate-mobile">
+                </div>
+                <div class="m-1rem flex justify-center direction-column align-center">
+                    <img src="http://landing.semparar.com.br/carnaval/assets/images/abastece/icone-presente.png" alt="">
+                    <p class="text-uppercase font-bold m-top-1rem color-primary text-centered">Ganhe!</p>
+                    <p class="mobile-viewport text-centered"><span class="font-bold">R$ 0,10/litro de desconto</span> direto na sua próxima fatura do Sem Parar </p>
+                </div>
+            </div>
         </div>
     </section>
-</body>
-</html>
+    <section class="section bg-grey-lighter">
+        <div class="container">
+            <header>
+                <h2 class="text-uppercase color-primary font-bold text-centered font-size-5">Veja como é fácil de usar no posto</h2>
+            </header>
+            <div class="steps">
+                <div class="step__item">
+                    <header class="step__tile">
+                        <span class="step__number">1</span>
+                        <picture>
+                            <img src="https://placehold.it/112x108">
+                        </picture>
+                    </header>
+                    <article>
+                        <p>Pare na bomba sinalizada com o Sem Parar.</p>
+                        <p class="bg-primary font-normal">É exclusivo aos clientes Sem Parar</p>
+                    </article>
+                </div>
+                <div class="step__item">
+                    <header class="step__tile">
+                        <span class="step__number">2</span>
+                        <picture>
+                            <img src="https://placehold.it/112x108">
+                        </picture>
+                    </header>
+                    <article>
+                        <p>Diga ao frentista quanto quer abastecer</p>
+                    </article>
+                </div>
+                <div class="step__item">
+                    <header class="step__tile">
+                        <span class="step__number">3</span>
+                        <picture>
+                            <img src="https://placehold.it/112x108">
+                        </picture>
+                    </header>
+                    <article>
+                        <p>Saia pela saída exclusiva do Sem Parar.</p>
+                        <p class="bg-primary font-normal">Evite a fila de pagamento do Carrefour.</p>
+                    </article>
+                </div>
+                <div class="step__item">
+                    <header class="step__tile">
+                        <span class="step__number">4</span>
+                        <picture>
+                            <img src="https://placehold.it/112x108">
+                        </picture>
+                    </header>
+                    <article>
+                        <p>Pronto! Você receberá um SMS com a confirmação do abastecimento</p>
+                    </article>
+                </div>                                                
+            </div>
+        </div>
+    </section>
+    <section class="disclaimer bg-grey-lighter">
+        <div class="container">
+            <header>
+                <h2 class="font-bold color-primary text-uppercase text-centered font-size-5 m-bottom-1rem">Regulamento</h2>
+            </header>
+            <p class="text-justified">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repudiandae placeat quos ipsum 
+                aliquid similique, inventore accusamus molestiae nostrum illum ducimus at consequatur? Eius et 
+                non reprehenderit commodi? Dignissimos, saepe. Lorem ipsum dolor, sit amet consectetur 
+                adipisicing elit. Nesciunt quaerat non quam corrupti, eum, perspiciatis repudiandae voluptas 
+                eligendi aperiam ipsam corporis sunt provident labore. Dolores a eaque maxime reiciendis earum!
+            </p>
+        </div>
+    </section>
+    <section class="contact section bg-grey-light">
+        <div class="container">
+            <div class="contact__items">
+                <div class="contact__item">
+                    <p class="font-bold">Central de relacionamento</p>
+                    <p>4002 1552 (Capitais e Regiões metropolitanas)</p>
+                    <p>0800 015 02 52 (Demais localidades)</p>
+                </div>
+                <hr class="contact__divisor">
+                <div class="contact__item">
+                    <p>SAC 0800 723 2245</p>
+                    <p>SAC (Deficiência auditiva ou de fala) 0800 772 0270</p>
+                    <p>Ouvidoria 0800 770 0686</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section  bg-grey-lighter">
+        <div class="container flex justify-center align-center">
+            <img src="https://placehold.it/100x100" class="m-left-1rem m-right-1rem" alt="Logotipo Sem Parar">
+            <img src="https://placehold.it/100x100" class="m-left-1rem m-right-1rem" alt="Logo Carrefour">
+        </div>
+    </section>
+    
+    <footer class="bg-primary p-2rem">
+        <div class="container">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, voluptates voluptate blanditiis 
+                voluptatibus, recusandae</p>
+            </div>
+        </footer>
+    </body>
+    </html>
