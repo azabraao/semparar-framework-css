@@ -42,4 +42,8 @@
     .align-center--mob {
         @include align-items(unset);
     }
+    
+    .direction-column--mob {
+        @include flex-direction(column);
+    }
 }
