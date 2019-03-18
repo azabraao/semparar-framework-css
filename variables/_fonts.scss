@@ -1,10 +1,5 @@
-@font-face {
-    font-family: Panton;
-    src: url("https://semparar.vteximg.com.br/arquivos/panton.black-caps.otf.css");
-}
-
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
 
-$font-primary: Panton, Helvetica, Arial, sans-serif;
-$font-secondary: 'Open Sans', Arial, Helvetica, sans-serif;
-$font-tertiary: Calibri, Helvetica, Arial, sans-serif;
+$font-primary: 'Open Sans', Helvetica, sans-serif;
+$font-secondary: Calibri, sans-serif;
+$font-tertiary: Helvetica, Helvetica, sans-serif;
