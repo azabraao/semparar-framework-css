@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
-@font-face {
-  font-family: Panton;
-  src: url("https://semparar.vteximg.com.br/arquivos/panton.black-caps.otf.css");
-}
-
 .border-1px {
   border: 1px solid;
 }
@@ -82,6 +77,16 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 48rem) {
+  .direction-column--mob {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 48rem) {
@@ -305,15 +310,15 @@
 }
 
 .font-primary {
-  font-family: Panton, Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
 }
 
 .font-secondary {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: Calibri, sans-serif;
 }
 
 .font-tertiary {
-  font-family: Calibri, Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Helvetica, sans-serif;
 }
 
 .font-bold {
@@ -525,7 +530,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Panton, Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
 }
 
 div,
@@ -535,7 +540,7 @@ p,
 time,
 strong,
 b {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: Calibri, sans-serif;
 }
 
 * {
@@ -749,7 +754,7 @@ b {
 }
 
 .steps .step__number {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: Calibri, sans-serif;
   position: absolute;
   top: -0.93rem;
   left: -0.93rem;
@@ -910,4 +915,4 @@ b {
     width: 3.125rem;
   }
 }
-/*# sourceMappingURL=vrum-0.0.2.css.map */
+/*# sourceMappingURL=vrum.css.map */
