@@ -1,0 +1,39 @@
+/* Contact informations */
+.contact  {
+    .container {
+        @include display(flex);
+        @include justify-content(center);
+        text-align: center;
+    }
+
+    .contact__items {
+        @include display(flex);
+        @include flex-direction(column);
+        @include align-items(center);
+    }
+     
+    .contact__divisor {
+        background: $black;
+        height: 0.0625rem;
+        border: none;
+        width: 9.375rem;
+        margin: 1.5em 0;
+    }
+}
+
+@media only screen and (min-width: $mobile-up) {
+    .contact {
+        .contact__items {
+            @include display(flex);
+            @include flex-direction(row);
+            @include justify-content(space-evenly);
+            text-align: left;
+            width: 100%;
+        }
+        
+        .contact__divisor {
+            @include rotate(90deg);
+            width: 3.125rem;
+        }
+    }
+}

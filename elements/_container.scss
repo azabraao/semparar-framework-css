@@ -1,0 +1,29 @@
+// Container
+.container {
+    padding: 0 1rem;
+}
+
+@media only screen and (min-width: $mobile-up) {
+    .container {
+        padding: 0;
+        position: relative;
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: $desktop-up) {
+    .container {
+        padding: 0 5rem;
+        width: unset;
+    }
+}
+
+@media only screen and (min-width: $large-up) {
+    .container {
+        padding: 0;
+        position: relative;
+        margin: 0 auto;
+        width: 60rem;
+    }
+}
