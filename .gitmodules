@@ -1,0 +1,3 @@
+[submodule "vrum"]
+	path = vrum
+	url = https://github.com/azabraao/vrum.git
