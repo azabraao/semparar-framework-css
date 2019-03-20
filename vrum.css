@@ -377,6 +377,22 @@
   margin-left: 2rem;
 }
 
+.m-top-3rem {
+  margin-top: 3rem;
+}
+
+.m-right-3rem {
+  margin-right: 3rem;
+}
+
+.m-bottom-3rem {
+  margin-bottom: 3rem;
+}
+
+.m-left-3rem {
+  margin-left: 3rem;
+}
+
 .m-1rem {
   margin: 1rem;
 }
@@ -435,6 +451,23 @@
 
 .block {
   display: block;
+}
+
+.mobile {
+  display: block;
+}
+
+.desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 48rem) {
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
 }
 
 /*! minireset.css v0.0.4 | MIT License | github.com/jgthms/minireset.css */
@@ -550,47 +583,20 @@ b {
 }
 
 .navbar {
-  padding: 2rem 0;
+  height: 6rem;
+  font-size: 16px;
 }
 
-.navbar .container {
-  height: 100%;
-}
-
-.navbar .logo img {
-  max-height: 100%;
-}
-
-.navbar .logo--twice {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.navbar .logo--twice img {
-  max-height: 100%;
-}
-
-.navbar .logo--twice .logo__1 {
-  margin-right: 1.3rem;
-}
-
-.navbar .logo--twice .logo__2 {
-  margin-left: 1.3rem;
+.navbar .logo {
+  height: 3em;
 }
 
 @media only screen and (min-width: 48rem) {
-  .navbar .logo--twice {
-    -webkit-box-pack: flex-start;
-    -ms-flex-pack: flex-start;
-    justify-content: flex-start;
+  .navbar {
+    height: 6rem;
+  }
+  .navbar .logo {
+    height: 3rem;
   }
 }
 
@@ -689,9 +695,17 @@ b {
   margin-bottom: 1rem;
 }
 
-.icon {
+.icon, .icon--2, .icon--3 {
   max-width: 3.12rem;
   height: auto;
+}
+
+.icon--2 {
+  max-width: 4.62rem;
+}
+
+.icon--3 {
+  max-width: 6rem;
 }
 
 /* Steps tutorial */
@@ -846,7 +860,7 @@ b {
 }
 
 .section {
-  padding: 3rem 0;
+  padding: 4rem 0;
 }
 
 @media (min-width: 48rem) {
@@ -890,7 +904,7 @@ b {
   height: 0.0625rem;
   border: none;
   width: 9.375rem;
-  margin: 1.5em 0;
+  margin: 1.5em 2rem;
 }
 
 @media only screen and (min-width: 48rem) {
@@ -903,9 +917,9 @@ b {
     -moz-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     text-align: left;
     width: 100%;
   }
