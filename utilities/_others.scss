@@ -9,3 +9,21 @@
 .block {
     display: block;
 }
+
+.mobile {
+    display: block;
+}
+
+.desktop {
+    display: none;
+}
+
+@media only screen and (min-width: $mobile-up) {
+    .desktop {
+        display: block;
+    }
+    
+    .mobile {
+        display: none;
+    }
+}
