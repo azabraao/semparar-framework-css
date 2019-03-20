@@ -2,3 +2,13 @@
     max-width: 3.12rem;
     height: auto;
 }
+
+.icon--2 {
+    @extend .icon;
+    max-width: 4.62rem;
+}
+
+.icon--3 {
+    @extend .icon;
+    max-width: 6rem;
+}
