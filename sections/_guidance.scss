@@ -1,0 +1,75 @@
+.guidance {
+    padding: 3rem 0 0 0;
+    
+    .container {
+        padding: 0;
+    }
+    
+    .guidance__side {
+        padding: 0rem 1rem;
+        @include display(flex);
+        @include flex-direction(column);
+        @include align-items(center);
+        
+        .guidance__title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-family: $font-secondary;
+        }
+        
+        .guidance__paragraph {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .guidance__cta {
+            margin-bottom: 2rem;
+            display: inline-block;
+            font-weight: bold;
+            color: black;
+        }
+        
+    }
+    
+    .guidance__map iframe {
+        height: 30rem;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: $mobile-up) {
+    .guidance {
+        padding: 0;
+        
+        .container {
+            @include display(flex);
+            @include flex-direction(row);
+            @include align-items(flex-start);
+            @include justify-content(space-between);
+            padding: 0;
+            position: relative;
+            margin: 0 0 0 auto;
+            width: 90%;
+        }
+        
+        .guidance__side {
+            padding: 6rem 1rem 6rem 0;
+            @include align-items(flex-start);
+            
+            .guidance__paragraph {
+                text-align: left;
+            }
+        }
+        
+        .guidance__map {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: $desktop-up) {
+    .guidance__map {
+        width: 70%;
+    }
+}
