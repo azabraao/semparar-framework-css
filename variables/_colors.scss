@@ -1,4 +1,4 @@
-// Change Theme
+// change Theme
 $primary-name: "success";
 
 // Handling with Sass scope issue
@@ -7,24 +7,24 @@ $secondary:""; $secondary-light:""; $secondary-dark:""; $secondary-darker:"";
 
 @if $primary-name == "danger" {
     $primary: #f26d61;
-    $primary-light: #FF7366;
-    $primary-dark: #B25047;
-    $primary-darker: #72342E;
+    $primary-light: #ff7366;
+    $primary-dark: #b25047;
+    $primary-darker: #72342e;
 
-    $secondary: #41BB96;
-    $secondary-light: #45C8A0;
+    $secondary: #41bb96;
+    $secondary-light: #45c8a0;
     $secondary-dark: #04625d;
-    $secondary-darker: #153B30;
+    $secondary-darker: #153b30;
 } @else if $primary-name == "success" {
-    $primary: #41BB96;
-    $primary-light: #45C8A0;
+    $primary: #41bb96;
+    $primary-light: #45c8a0;
     $primary-dark: #04625d;
-    $primary-darker: #153B30;
+    $primary-darker: #153b30;
     
     $secondary: #f26d61;
-    $secondary-light: #FF7366;
-    $secondary-dark: #B25047;
-    $secondary-darker: #72342E;
+    $secondary-light: #ff7366;
+    $secondary-dark: #b25047;
+    $secondary-darker: #72342e;
 }
 
 
@@ -38,11 +38,11 @@ $grey-dark: #3a3837;
 $grey-light: #eeeeee;
 $grey-lighter: #f3f3f3;
 
-$warning: #FF9F1C;
-$warning-dark: #B26B0A;
-$warning-light: #FFAA35;
+$warning: #ff9f1c;
+$warning-dark: #b26b0a;
+$warning-light: #ffaa35;
 
-$link: #164C8E;
-$link-dark: #0A2342; 
-$link-light: #1F6DCE;
+$link: #164c8e;
+$link-dark: #0a2342; 
+$link-light: #1f6dce;
 $link-lighter: #beebdf;
