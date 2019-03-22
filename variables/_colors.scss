@@ -16,7 +16,7 @@ $secondary:""; $secondary-light:""; $secondary-dark:""; $secondary-darker:"";
     $secondary-dark: #04625d;
     $secondary-darker: #153B30;
 } @else if $primary-name == "success" {
-    $primary: #a2c755;
+    $primary: #41BB96;
     $primary-light: #45C8A0;
     $primary-dark: #04625d;
     $primary-darker: #153B30;
@@ -45,3 +45,4 @@ $warning-light: #FFAA35;
 $link: #164C8E;
 $link-dark: #0A2342; 
 $link-light: #1F6DCE;
+$link-lighter: #beebdf;
