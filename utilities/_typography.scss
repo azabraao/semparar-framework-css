@@ -1,17 +1,17 @@
 $font-sizes: (
-    smaller: .5rem, 
-    small: .75rem,
-    normal: 1rem,
-    size-5:	1.25rem,
-    size-4:	1.5rem,
-    size-3:	2rem,
-    size-2:	2.5rem,
-    size-1:	3rem,
-    4rem: 4rem,
-    5rem: 5rem,
-    6rem: 6rem,
-    7rem: 7rem,
-    8rem: 8rem
+smaller: .5rem, 
+small: .75rem,
+normal: 1rem,
+size-5:	1.25rem,
+size-4:	1.5rem,
+size-3:	2rem,
+size-2:	2.5rem,
+size-1:	3rem,
+4rem: 4rem,
+5rem: 5rem,
+6rem: 6rem,
+7rem: 7rem,
+8rem: 8rem
 );
 
 @each $size in $font-sizes {
@@ -35,7 +35,7 @@ $font-sizes: (
 .font-bold {
     font-weight: bold;
 }
-  
+
 .font-italic {
     font-style: italic;
 }
@@ -47,6 +47,12 @@ $font-sizes: (
 
 .text-centered {
     text-align: center;
+}
+
+@media only screen and (max-width: $mobile-up) {
+    .text-centered--mob {
+        text-align: center;
+    }
 }
 
 .text-justified {
