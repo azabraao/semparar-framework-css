@@ -1,10 +1,11 @@
 .button {
+    text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
     background-color: $grey-light;
     width: 17rem;
     text-align: center;
-    color: $grey;
+    color: $grey-dark;
     padding: 1rem;
     border-radius: .25rem;
     font-weight: bold;
