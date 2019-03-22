@@ -19,15 +19,17 @@
 .button--black {
     background-color: $black;
     color: $primary;
-    border: 0.15rem solid #000;
+    border: 0.15rem solid $black;
 }
 
 .button--black:hover {
+    border-color: $dark;
     background-color: $dark;
 }
 
 .button--black-outlined {
     background-color: $nobg;
+    color: $black;
     border: 0.15rem solid $black;
 }
 
