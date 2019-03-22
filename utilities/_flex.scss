@@ -38,14 +38,28 @@
     @include align-items(center);
 }
 
-@media only screen and (max-width: $mobile-up) {
-    .direction-column--mob {
-        @include flex-direction(column);
-    }
+.flex-wrap {
+    @include flex-wrap(wrap);
+}
+
+.direction-column--mob {
+    @include flex-direction(column);
+}
+
+.justify-center--mob {
+    @include justify-content(center);
 }
 
 @media only screen and (min-width: $mobile-up) {
     .align-center--mob {
         @include align-items(unset);
     }
+    
+    .direction-column--mob {
+        @include flex-direction(unset);
+    }
+    
+    .justify-center--mob {
+        @include justify-content(unset);
+    }    
 }
