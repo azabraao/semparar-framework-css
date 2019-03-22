@@ -1,3 +1,10 @@
+$zero: (
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0
+);
+
 $oneRem: (
     top: 1rem,
     right: 1rem,
@@ -18,6 +25,12 @@ $threeRem: (
     bottom: 3rem,
     left: 3rem
 );
+
+@each $item in $zero {
+    .m-#{nth($item,1)}-#{nth($item,2)} {
+        margin-#{nth($item,1)}: nth($item,2)
+    }
+}
 
 @each $item in $oneRem {
     .m-#{nth($item,1)}-#{nth($item,2)} {
