@@ -1,0 +1,11 @@
+.pre-footer {
+    margin-bottom: -1.5rem;
+
+    .pre-footer__inner {
+        width: 8rem;
+       
+    }
+    .pre-footer__inner:nth-child(2) {
+        width: 13rem;
+    }
+}
