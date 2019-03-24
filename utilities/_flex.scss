@@ -63,3 +63,14 @@
         @include justify-content(unset);
     }    
 }
+
+// For IE 11
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .justify-center--mob {
+        justify-content: flex-start !important;
+    }
+
+    .direction-column--mob {
+        flex-direction: row;
+    }
+}
