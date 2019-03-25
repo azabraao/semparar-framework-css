@@ -533,11 +533,15 @@
 
 .highlight {
   padding: .3em .6em;
-  display: inline-block;
+  line-height: 1.6rem;
 }
 
 .mobile-width {
   max-width: 20rem;
+}
+
+.mobile-item {
+  max-width: 13.7rem;
 }
 
 .pre-footer {
