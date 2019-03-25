@@ -1138,7 +1138,97 @@ b {
   width: 100%;
 }
 
+.guidance .content-map {
+  height: 360px;
+  margin: 0 0 0 0;
+  position: relative;
+}
+
+.guidance .content-map .maps-input {
+  margin-top: 0.625rem;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  height: 2.5rem;
+  outline: 0;
+  width: 75%;
+  left: 130px;
+  top: 39px;
+  background-color: #fff;
+  font-family: "Open Sans", Calibri, Helvetica, sans-serif;
+  font-weight: 300;
+  text-overflow: ellipsis;
+  z-index: 9;
+  direction: ltr;
+  overflow: hidden;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  color: #565656;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding: 0px 17px;
+  background-clip: padding-box;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+}
+
+.guidance .map {
+  height: 100%;
+}
+
+.guidance .station-popup .station-popoup__button {
+  width: 100%;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  background-color: #eeeeee;
+  text-align: center;
+  color: #3a3837;
+  padding: 0.6rem 0.1rem;
+  border-radius: .25rem;
+  border: 1px solid #d2d0d0;
+}
+
+.guidance .station-popup .station-popup__title,
+.guidance .station-popup .station-popup__name,
+.guidance .station-popup .station-popup__street,
+.guidance .station-popup .station-popup__town,
+.guidance .station-popup .station-popup__city,
+.guidance .station-popup .station-popup__site {
+  display: block;
+  margin-bottom: .2rem;
+}
+
+.guidance .station-popup .station-popup__name {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #3a3837;
+}
+
+.guidance .station-popup .gm-style-iw-d {
+  height: 300px;
+}
+
+.guidance .map-legend {
+  font-size: 0.8em;
+  padding: 1.3rem;
+}
+
+.guidance .map-legend p {
+  font-family: "Open Sans";
+  font-size: .8rem;
+}
+
+.gmnoprint {
+  display: none;
+}
+
 @media only screen and (min-width: 48rem) {
+  .gmnoprint {
+    display: block;
+  }
   .guidance {
     padding: 0;
   }
@@ -1173,6 +1263,9 @@ b {
   }
   .guidance .guidance__map {
     width: 100%;
+  }
+  .guidance .content-map .maps-input {
+    width: 52%;
   }
 }
 
