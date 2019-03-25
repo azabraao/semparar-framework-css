@@ -522,12 +522,23 @@
   display: none;
 }
 
+.rotate-mobile {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin: 4.3rem;
+}
+
 @media only screen and (min-width: 48rem) {
   .desktop {
     display: block;
   }
   .mobile {
     display: none;
+  }
+  .rotate-mobile {
+    -webkit-transform: unset;
+            transform: unset;
+    margin: unset;
   }
 }
 

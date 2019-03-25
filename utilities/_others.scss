@@ -15,6 +15,11 @@
     display: none;
 }
 
+.rotate-mobile {
+    transform: rotate(90deg);
+    margin: 4.3rem;
+}
+
 @media only screen and (min-width: $mobile-up) {
     .desktop {
         display: block;
@@ -22,6 +27,11 @@
     
     .mobile {
         display: none;
+    }
+
+    .rotate-mobile {
+        transform: unset;
+        margin: unset;
     }
 }
 
