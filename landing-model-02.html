@@ -4,40 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="vrum-1.2.0.css">
+    <link rel="stylesheet" href="vrum/vrum.css">
     <title>Abastece Carrefour - Sem Parar</title>
-    <!-- Simulating custom css -->
-    <style>
-        
-        .mobile-viewport {
-            max-width: 13.7rem;
-        }
-        
-        @media only screen and (max-width: 768px) {
-            .rotate-mobile {
-                transform: rotate(90deg);
-                margin: 4.3rem;
-            }
-        }
-        
-        /* Disclaimer */
-        .disclaimer {
-            padding: 0rem 0 5rem 0;
-        }
-    </style>
 </head>
 <body>
-    <header class="header bg-grey">
-        <nav class="navbar flex justify-center align-center bg-white">
-            <img src="https://placehold.it/100x100" class="m-left-1rem m-right-1rem" alt="Logotipo Sem Parar">
-            <img src="https://placehold.it/100x100" class="m-left-1rem m-right-1rem" alt="Logo Carrefour">
-        </nav>
-        <div class="container">
-            <div class="banner p-top-2rem p-bottom-2rem">
-                <img src="https://placehold.it/1061x485/d5d5d5" alt="">
-            </div>
-        </div>
-    </header>
+    <nav class="navbar flex justify-center align-center bg-white">
+        <img src="https://semparar.vteximg.com.br/arquivos/logo-sem-parar.png" class="logo m-left-1rem m-right-1rem" alt="Logotipo Sem Parar">
+        <img src="http://landing.semparar.com.br/carnavalbr/assets/images/logo-br.png" class="logo m-left-1rem m-right-1rem" alt="Logo Carrefour">
+    </nav>
+    <div class="banner">
+        <img src="http://landing.semparar.com.br/carnavalbr/assets/images/banner.png" class="fullwidth" alt="">
+    </div>
     <section class="section bg-grey-lighter">
         <div class="container">
             <h2 class="color-primary font-bold text-centered font-size-4">O Sem Parar está cheio de novidades.</h2>
@@ -45,12 +22,11 @@
                 Agora você também <span class="font-bold color-link">abastece no posto Carrefour da Rodovia Raposo Tavares </span>
                 com o seu Sem Parar. Preço baixo e muito mais comodidade para você!
             </p>
-            
             <div class="flex direction-column--mob">
                 <div class="m-1rem flex justify-center direction-column align-center">
                     <img src="http://landing.semparar.com.br/carnaval/assets/images/abastece/icone-como.png" alt="">
                     <p class="text-uppercase font-bold m-top-1rem color-primary text-centered">Vá ao posto</p>
-                    <p class="text-centered mobile-viewport">Vá a um dos postos que aceita Sem Parar até dia <b>28/02</b></p>
+                    <p class="mobile-item text-centered">Vá a um dos postos que aceita Sem Parar até dia <b>28/02</b></p>
                     <a href="#mapa" class="color-black">(Confira aqui)</a>
                 </div>
                 <div class="flex justify-center align-center m-bottom-2rem rotate-mobile">
@@ -59,7 +35,7 @@
                 <div class="m-1rem flex justify-center direction-column align-center">
                     <img src="http://landing.semparar.com.br/carnaval/assets/images/abastece/icone-bomba.png" alt="">
                     <p class="text-uppercase font-bold m-top-1rem color-primary text-centered">Abasteça o valor que preferir</p>
-                    <p class="mobile-viewport text-centered">Quanto mais abastecer,<span class="font-bold">mais desconto você ganha <a href="#disclaimer" class="color-black">*</a></span></p>
+                    <p class="mobile-item text-centered">Quanto mais abastecer,<span class="font-bold">mais desconto você ganha <a href="#disclaimer" class="color-black">*</a></span></p>
                 </div>
                 <div class="flex justify-center align-center m-bottom-2rem">
                     <img src="http://landing.semparar.com.br/carnaval/assets/images/abastece/seta.png" class="rotate-mobile">
@@ -67,7 +43,7 @@
                 <div class="m-1rem flex justify-center direction-column align-center">
                     <img src="http://landing.semparar.com.br/carnaval/assets/images/abastece/icone-presente.png" alt="">
                     <p class="text-uppercase font-bold m-top-1rem color-primary text-centered">Ganhe!</p>
-                    <p class="mobile-viewport text-centered"><span class="font-bold">R$ 0,10/litro de desconto</span> direto na sua próxima fatura do Sem Parar </p>
+                    <p class="mobile-item text-centered"><span class="font-bold">R$ 0,10/litro de desconto</span> direto na sua próxima fatura do Sem Parar </p>
                 </div>
             </div>
         </div>
@@ -87,7 +63,7 @@
                     </header>
                     <article class="step__text">
                         <p>Pare na bomba sinalizada com o Sem Parar.</p>
-                        <p class="bg-primary font-normal inline">É exclusivo aos clientes Sem Parar</p>
+                        <p class="bg-primary font-normal inline highlight inline">É exclusivo aos clientes Sem Parar</p>
                     </article>
                 </div>
                 <div class="step__item">
@@ -110,7 +86,7 @@
                     </header>
                     <article class="step__text">
                         <p>Saia pela saída exclusiva do Sem Parar.</p>
-                        <p class="bg-primary font-normal inline">Evite a fila de pagamento do Carrefour.</p>
+                        <p class="bg-primary font-normal inline highlight inline">Evite a fila de pagamento do Carrefour.</p>
                     </article>
                 </div>
                 <div class="step__item">
@@ -127,7 +103,7 @@
             </div>
         </div>
     </section>
-    <section id="disclaimer" class="disclaimer bg-grey-lighter">
+    <section id="disclaimer" class="section bg-grey-lighter">
         <div class="container">
             <header>
                 <h2 class="font-bold color-primary text-uppercase text-centered font-size-5 m-bottom-1rem">Regulamento</h2>
@@ -159,17 +135,19 @@
         </div>
     </section>
     <section class="section  bg-grey-lighter">
-        <div class="container flex justify-center align-center">
-            <img src="https://placehold.it/100x100" class="m-left-1rem m-right-1rem" alt="Logotipo Sem Parar">
-            <img src="https://placehold.it/100x100" class="m-left-1rem m-right-1rem" alt="Logo Carrefour">
+        <div class="navbar flex justify-center align-center">
+            <img src="https://semparar.vteximg.com.br/arquivos/logo-sem-parar.png" class="logo m-left-1rem m-right-1rem" alt="Logotipo Sem Parar">
+            <img src="http://landing.semparar.com.br/carnavalbr/assets/images/logo-br.png" class="logo m-left-1rem m-right-1rem" alt="Logo Carrefour">
         </div>
     </section>
     
     <footer class="bg-primary p-2rem">
         <div class="container">
-            <p> 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, voluptates voluptate blanditiis 
-                voluptatibus, recusandae
+            <p class="font-small color-dark text-centered">
+                CGMP - Centro de Gestão de Meios de Pagamento Ltda. 
+                CNPJ: 04.088.208/0001-65 | Endereço: Rua Minas Bogasian, 
+                253 CEP 0601310 - Osasco - SP | 
+                <a href="http://www.semparar.com.br/atendimento" class="color-dark">www.semparar.com.br/atendimento</a>
             </p>
         </div>
     </footer>
