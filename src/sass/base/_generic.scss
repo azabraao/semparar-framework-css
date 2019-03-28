@@ -1,0 +1,23 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-primary;
+}
+
+div,
+a,
+span,
+p,
+time,
+strong,
+b {
+    font-family: $font-secondary;
+}
+
+* {
+    transition: .2s;
+    scroll-behavior: smooth;
+}

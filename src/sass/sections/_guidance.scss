@@ -1,0 +1,170 @@
+.guidance {
+    padding: 3rem 0 0 0;
+    
+    .container {
+        padding: 0;
+    }
+    
+    .guidance__side {
+        padding: 0rem 1rem;
+        @include display(flex);
+        @include flex-direction(column);
+        @include align-items(center);
+        
+        .guidance__title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-family: $font-secondary;
+        }
+        
+        .guidance__paragraph {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .guidance__cta {
+            margin-bottom: 2rem;
+            display: inline-block;
+            font-weight: bold;
+            color: black;
+        }
+        
+    }
+    
+    .guidance__map iframe {
+        height: 30rem;
+        width: 100%;
+    }
+    
+    .content-map {
+        height: 360px;
+        margin: 0 0 0 0;
+        position: relative;
+        
+        .maps-input {
+            margin-top: 0.625rem;
+            border: 1px solid transparent;
+            border-radius: 2px;
+            height: 2.5rem;
+            outline: 0;
+            width: 75%;
+            left: 130px;
+            top: 39px;
+            background-color: #fff;
+            font-family: "Open Sans", Calibri, Helvetica, sans-serif;
+            font-weight: 300;
+            text-overflow: ellipsis;
+            z-index: 9;
+            direction: ltr;
+            overflow: hidden;
+            display: table-cell;
+            vertical-align: middle;
+            position: relative;
+            color: rgb(86, 86, 86);
+            user-select: none;
+            padding: 0px 17px;
+            background-clip: padding-box;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+        }
+    }
+    
+    .map {
+        height: 100%;
+    }
+    
+    .station-popup {
+        .station-popoup__button {
+            width: 100%;
+            margin-top: 1rem;
+            text-transform: uppercase;
+            background-color: #eeeeee;
+            text-align: center;
+            color: #3a3837;
+            padding: 0.6rem 0.1rem;
+            border-radius: .25rem;
+            border: 1px solid #d2d0d0;
+        }
+        
+        .station-popup__title,
+        .station-popup__name,
+        .station-popup__street,
+        .station-popup__town,
+        .station-popup__city,
+        .station-popup__site {
+            display: block;
+            margin-bottom: .2rem;
+        }
+        
+        .station-popup__name {
+            font-size: 14px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #3a3837;
+        }
+        
+        .gm-style-iw-d {
+            height: 300px;
+        }
+    }
+    
+    .map-legend {
+        font-size: 0.8em;
+        padding: 1.3rem;
+    }
+
+    .map-legend p {
+        font-family: "Open Sans";
+        font-size: .8rem;
+    }
+}
+
+.gmnoprint {
+    display: none;
+}
+
+@media only screen and (min-width: $mobile-up) {
+    
+    .gmnoprint {
+        display: block;
+    }
+    
+    .guidance {
+        padding: 0;
+        
+        .container {
+            @include display(flex);
+            @include flex-direction(row);
+            @include align-items(flex-start);
+            @include justify-content(space-between);
+            padding: 0;
+            position: relative;
+            margin: 0 0 0 auto;
+            width: 90%;
+        }
+        
+        .guidance__side {
+            padding: 6rem 1rem 6rem 0;
+            @include align-items(flex-start);
+            
+            .guidance__paragraph {
+                text-align: left;
+            }
+        }
+        
+        .guidance__map {
+            width: 100%;
+        }
+        
+        .content-map {
+            .maps-input {
+                width: 52%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $desktop-up) {
+    .guidance__map {
+        width: 70%;
+    }
+}

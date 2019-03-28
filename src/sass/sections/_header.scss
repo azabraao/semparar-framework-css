@@ -1,0 +1,60 @@
+
+.header {
+    padding-bottom: 5rem;
+    
+    .header__title {
+        font-size: 4rem;
+        font-family: $font-primary;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        line-height: 4.2rem;
+    }
+
+   .header__subtitle {
+        margin-bottom: 3rem;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        max-width: 34rem;
+    }   
+    
+    .header__buttons {
+        .button:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: .6rem;
+        }
+    }
+}
+
+@media only screen and (min-width: $mobile-up) {
+    .header {
+        padding-bottom: 10rem;
+        
+        .header__subtitle {
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            max-width: 38rem;
+        }
+        
+        .header__buttons {
+            margin-bottom: 1rem;
+
+            .button {
+                margin-bottom: 0 !important;
+            }
+
+            .button:not(:last-child) {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $desktop-up) {
+    .header {
+        background-image: url(https://sempararqa.vteximg.com.br/arquivos/lp-abastece-persona.png);
+        background-repeat: no-repeat;
+        background-position-x: 90%;
+        background-size: contain;
+    }
+}
