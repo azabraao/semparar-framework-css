@@ -12,7 +12,7 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./src/css'));
 });
 
-gulp.task('minify-css', function () {
+gulp.task('minify-css', async function () {
     gulp.src('./src/css/*.css')
     .pipe(uglifycss({
         "uglyComments": true
@@ -21,8 +21,7 @@ gulp.task('minify-css', function () {
 });
 
 gulp.task('watch',function(){
-    gulp.watch('./src/sass/**/*.scss', gulp.series('sass'));
-    gulp.watch('./src/css/*.css',gulp.series('minify-css'))
+    gulp.watch('./src/sass/**/*.scss', gulp.series(['sass','minify-css']));
 });
 
 gulp.task('default', gulp.series('watch'));
