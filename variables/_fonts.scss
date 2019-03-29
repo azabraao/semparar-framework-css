@@ -1,5 +1,14 @@
+@font-face {
+    font-family: Vanguard;
+    src: url("https://semparar.vteximg.com.br/arquivos/Vanguard-CF-Extra-Bold-Oblique.otf.css"),
+         url('http://semparar.vteximg.com.br/arquivos/vanguard-cf-extra-bold-oblique-webfont.woff2.css') format('woff2'),
+         url('http://semparar.vteximg.com.br/arquivos/vanguard-cf-extra-bold-oblique-webfont.woff.css') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
 
-$font-primary: 'Open Sans', Helvetica, sans-serif;
-$font-secondary: Calibri, sans-serif;
-$font-tertiary: Helvetica, Helvetica, sans-serif;
+$font-primary: Vanguard, 'Open Sans', Calibri, Helvetica, sans-serif;
+$font-secondary: 'Open Sans', Calibri, Helvetica, sans-serif;
+$font-tertiary: Calibri, Helvetica, Arial, sans-serif;

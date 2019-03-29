@@ -31,8 +31,8 @@
         
     }
     
-    .guidance__map iframe {
-        height: 30rem;
+    .guidance__map .content-map {
+        height: 23rem;
         width: 100%;
     }
     
@@ -166,5 +166,23 @@
 @media only screen and (min-width: $desktop-up) {
     .guidance__map {
         width: 70%;
+    }
+}
+
+@media only screen and (min-width: $large-up) {
+    .guidance {
+        .container {
+            width: 85%;
+        }
+    }
+}
+
+// Custom breakpoint
+@media only screen and (min-width: 1367px) {
+    .guidance {
+        .container {
+            margin: auto;
+            width: 60rem;
+        }
     }
 }

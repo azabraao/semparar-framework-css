@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
+@font-face {
+  font-family: Vanguard;
+  src: url("https://semparar.vteximg.com.br/arquivos/Vanguard-CF-Extra-Bold-Oblique.otf.css"), url("http://semparar.vteximg.com.br/arquivos/vanguard-cf-extra-bold-oblique-webfont.woff2.css") format("woff2"), url("http://semparar.vteximg.com.br/arquivos/vanguard-cf-extra-bold-oblique-webfont.woff.css") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .border-1px {
   border: 1px solid;
 }
@@ -353,15 +360,15 @@
 }
 
 .font-primary {
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: Vanguard, "Open Sans", Calibri, Helvetica, sans-serif;
 }
 
 .font-secondary {
-  font-family: Calibri, sans-serif;
+  font-family: "Open Sans", Calibri, Helvetica, sans-serif;
 }
 
 .font-tertiary {
-  font-family: Helvetica, Helvetica, sans-serif;
+  font-family: Calibri, Helvetica, Arial, sans-serif;
 }
 
 .font-bold {
@@ -660,7 +667,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: Vanguard, "Open Sans", Calibri, Helvetica, sans-serif;
 }
 
 div,
@@ -670,7 +677,7 @@ p,
 time,
 strong,
 b {
-  font-family: Calibri, sans-serif;
+  font-family: "Open Sans", Calibri, Helvetica, sans-serif;
 }
 
 * {
@@ -865,7 +872,7 @@ b {
 }
 
 .steps .step__number {
-  font-family: Calibri, sans-serif;
+  font-family: "Open Sans", Calibri, Helvetica, sans-serif;
   position: absolute;
   top: -0.93rem;
   left: -0.93rem;
@@ -1059,7 +1066,7 @@ b {
 
 .header .header__title {
   font-size: 4rem;
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: Vanguard, "Open Sans", Calibri, Helvetica, sans-serif;
   margin-top: 3rem;
   margin-bottom: 1rem;
   line-height: 4.2rem;
@@ -1133,7 +1140,7 @@ b {
 .guidance .guidance__side .guidance__title {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  font-family: Calibri, sans-serif;
+  font-family: "Open Sans", Calibri, Helvetica, sans-serif;
 }
 
 .guidance .guidance__side .guidance__paragraph {
@@ -1148,8 +1155,8 @@ b {
   color: black;
 }
 
-.guidance .guidance__map iframe {
-  height: 30rem;
+.guidance .guidance__map .content-map {
+  height: 23rem;
   width: 100%;
 }
 
@@ -1287,6 +1294,19 @@ b {
 @media only screen and (min-width: 62rem) {
   .guidance__map {
     width: 70%;
+  }
+}
+
+@media only screen and (min-width: 75rem) {
+  .guidance .container {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 1367px) {
+  .guidance .container {
+    margin: auto;
+    width: 60rem;
   }
 }
 /*# sourceMappingURL=vrum.css.map */
