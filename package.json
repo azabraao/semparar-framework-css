@@ -1,0 +1,30 @@
+{
+  "name": "vrum-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azabraao/vrum.git"
+  },
+  "keywords": [
+    "framework",
+    "css"
+  ],
+  "author": "azabraao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azabraao/vrum/issues"
+  },
+  "homepage": "https://github.com/azabraao/vrum#readme",
+  "devDependencies": {
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.11.0"
+  },
+  "dependencies": {
+    "gulp-uglifycss": "^1.1.0"
+  }
+}
