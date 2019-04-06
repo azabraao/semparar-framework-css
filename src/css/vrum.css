@@ -535,7 +535,6 @@ b {
   font-family: "Open Sans", Calibri, Helvetica, sans-serif; }
 
 * {
-  transition: .2s;
   scroll-behavior: smooth; }
 
 .navbar {
