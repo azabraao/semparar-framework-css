@@ -31,6 +31,13 @@
     align-items:$align;
 }
 
+@mixin align-self($align) {
+    @if $align == flex-start {
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+    }
+}
+
 @mixin flex-direction($direction) {
 	@if $direction == row {
 		-webkit-box-direction: normal;

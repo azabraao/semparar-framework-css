@@ -13,8 +13,10 @@
         
         .guidance__title {
             font-size: 1.3rem;
-            margin-bottom: 1rem;
-            font-family: $font-secondary;
+            font-family: $font-primary;
+            color: $primary;
+            text-transform: uppercase;
+            text-align: center;
         }
         
         .guidance__paragraph {
@@ -23,12 +25,13 @@
         }
         
         .guidance__cta {
+            text-transform: uppercase;
+            font-family: $font-secondary;
             margin-bottom: 2rem;
             display: inline-block;
             font-weight: bold;
-            color: black;
+            color: $dark;
         }
-        
     }
     
     .guidance__map .content-map {
@@ -143,9 +146,14 @@
         }
         
         .guidance__side {
-            padding: 6rem 1rem 6rem 0;
+            padding: 6rem 3rem 6rem 0;
+            width: 40%;
             @include align-items(flex-start);
             
+            .guidance__title {
+                text-align: left;
+            }
+
             .guidance__paragraph {
                 text-align: left;
             }
@@ -164,6 +172,12 @@
 }
 
 @media only screen and (min-width: $desktop-up) {
+    .guidance {
+        .guidance__side {
+            width: 32%;
+        }
+    }
+    
     .guidance__map {
         width: 70%;
     }

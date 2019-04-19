@@ -1,0 +1,43 @@
+
+.table {
+    @include display(flex);
+    @include flex-direction(row);
+    @include align-items(flex-start);
+    @include justify-content(flex-start);
+    overflow-x: scroll;
+
+    .table__header,
+    .table__data {
+        text-align: center;
+        padding: .3rem;
+        width: 320px;
+    }
+    
+    .table__column {
+        border-right: 0.09rem solid $grey;
+    }
+    
+    .table__data:first-child {
+        border-top: 0;
+    }
+    
+    .table__column:last-child {
+        border-right: 0;
+    }
+    
+    .table__column:last-child .table__data {
+        border-top: 0.09rem solid $grey;
+    }
+    
+    .table__column:first-child .table__data {
+        border-top: 0.09rem solid $grey;
+    }
+    
+}
+
+@media only screen and (min-width: $mobile-up) {
+    .table {
+        @include justify-content(center);
+        overflow-x: unset;
+    }
+}

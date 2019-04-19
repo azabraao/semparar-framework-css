@@ -26,6 +26,20 @@ $threeRem: (
     left: 3rem
 );
 
+$fourRem: (
+    top: 4rem,
+    right: 4rem,
+    bottom: 4rem,
+    left: 4rem
+);
+
+$fifthRem: (
+    top: 5rem,
+    right: 5rem,
+    bottom: 5rem,
+    left: 5rem
+);
+
 @each $item in $zero {
     .m-#{nth($item,1)}-#{nth($item,2)} {
         margin-#{nth($item,1)}: nth($item,2)
@@ -50,6 +64,18 @@ $threeRem: (
     }
 }
 
+@each $item in $fourRem {
+    .m-#{nth($item,1)}-#{nth($item,2)} {
+        margin-#{nth($item,1)}: nth($item,2)
+    }
+}
+
+@each $item in $fifthRem {
+    .m-#{nth($item,1)}-#{nth($item,2)} {
+        margin-#{nth($item,1)}: nth($item,2)
+    }
+}
+
 .m-1rem {
     margin: 1rem;
 }
@@ -65,6 +91,24 @@ $threeRem: (
 }
 
 @each $item in $twoRem {
+    .p-#{nth($item,1)}-#{nth($item,2)} {
+        padding-#{nth($item,1)}: nth($item,2)
+    }
+}
+
+@each $item in $threeRem {
+    .p-#{nth($item,1)}-#{nth($item,2)} {
+        padding-#{nth($item,1)}: nth($item,2)
+    }
+}
+
+@each $item in $fourRem {
+    .p-#{nth($item,1)}-#{nth($item,2)} {
+        padding-#{nth($item,1)}: nth($item,2)
+    }
+}
+
+@each $item in $fifthRem {
     .p-#{nth($item,1)}-#{nth($item,2)} {
         padding-#{nth($item,1)}: nth($item,2)
     }
