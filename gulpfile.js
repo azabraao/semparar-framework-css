@@ -3,6 +3,7 @@
 let gulp = require('gulp');
 let sass = require('gulp-sass');
 let uglifycss = require('gulp-uglifycss');
+var rename = require("gulp-rename");
 
 sass.compiler = require('node-sass');
 
@@ -17,6 +18,7 @@ gulp.task('minify-css', async function () {
     .pipe(uglifycss({
         "uglyComments": true
     }))
+    .pipe(rename('vrum.min.css'))
     .pipe(gulp.dest('./dist/'));
 });
 
