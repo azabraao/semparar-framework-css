@@ -8,22 +8,22 @@ var rename = require("gulp-rename");
 sass.compiler = require('node-sass');
 
 gulp.task('sass', function () {
-    return gulp.src('./src/sass/**/*.scss')
+    return gulp.src('./sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./src/css'));
+    .pipe(gulp.dest('./css'));
 });
 
 gulp.task('minify-css', async function () {
-    gulp.src('./src/css/*.css')
+    gulp.src('./css/vrum.css')
     .pipe(uglifycss({
         "uglyComments": true
     }))
     .pipe(rename('vrum.min.css'))
-    .pipe(gulp.dest('./dist/'));
+    .pipe(gulp.dest('./css'));
 });
 
 gulp.task('watch',function(){
-    gulp.watch('./src/sass/**/*.scss', gulp.series(['sass','minify-css']));
+    gulp.watch('./sass/**/*.scss', gulp.series(['sass','minify-css']));
 });
 
 gulp.task('default', gulp.series('watch'));
