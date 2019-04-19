@@ -18,8 +18,12 @@
 .two-thirds ,
 .one-quarter,
 .two-quarters,
-.three-quarters {
-    width: 18.75rem;
+.three-quarters,
+.one-fifth,
+.two-fifths,
+.three-fifths,
+.four-fifths {
+    width: 17.75rem;
 }
 
 @media only screen and (min-width: $mobile-up) {
@@ -49,5 +53,21 @@
     
     .three-quarters {
         width: (100% / 4) * 3;
-    }    
+    }
+    
+    .one-fifth {
+        width: (100% / 5);
+    }
+
+    .two-fifths {
+        width: (100% / 5) * 2;
+    }
+    
+    .three-fifths {
+        width: (100% / 5) * 3;
+    }
+    
+    .four-fifths {
+        width: (100% / 5) * 4;
+    }
 }

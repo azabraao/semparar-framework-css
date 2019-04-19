@@ -1,0 +1,123 @@
+
+.header {
+    padding-top: 2rem;
+    padding-bottom: 0;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position-y: 102%;
+    background-position-x: center;
+    background-size: 90%;
+    border-bottom: 2px solid $grey-dark;
+    
+    .header__image-title {
+        width: 16.5rem;
+        text-align: center;
+    }
+    
+    .header__title {
+        color: $warning;
+        margin-bottom: .5rem;
+        text-transform: uppercase;
+        font-size: 2.2rem;
+        max-width: 34rem;
+        text-align: center;
+        margin-left: -5px; //for mobile-alignment fixing
+        
+    }
+    
+    .header__subtitle {
+        color: $grey-dark;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        max-width: 17rem;
+        text-align: left;
+        padding-left: 2px; //for mobile-alignment fixing
+    }   
+    
+    .header__buttons {
+        .button:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: .6rem;
+        }
+    }
+}
+
+@media only screen and (min-width: $mobile-up) {
+    .header {
+        padding-top: 2rem;
+        padding-bottom: 6rem;
+        background-image: url(header-bomba-pascoa-universal.png);
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-size: 90%;
+
+        .header__title {
+            text-align: left;
+            font-size: 2.42rem;
+            margin-left: -1px;
+        }
+        
+        .header__image-title {
+            width: 297px;
+            @include align-self(flex-start);
+        }
+        
+        .header__subtitle {
+            text-transform: uppercase;
+            font-size: 1.25rem;
+            max-width: 38rem;
+            text-align: left;
+            padding-left: 0;
+            margin-left: 0px;
+            margin-bottom: 0;
+        }
+        
+        .header__buttons {
+            margin-bottom: 1rem;
+            
+            .button {
+                margin-bottom: 0 !important;
+            }
+            
+            .button:not(:last-child) {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $desktop-up) {
+    .header {
+        background-position-x: right;
+        background-size: 80%;
+
+        .header__image-title {
+            width: 416px;
+        }
+        
+        .header__title {
+            font-size: 3.39rem;
+        }
+
+        .header__subtitle {
+            font-size: 1.119rem;
+        }
+    }
+}
+
+@media only screen and (min-width: $large-up) {
+    .header {
+        background-position-x: 100%;
+        background-size: 64rem;
+        padding-bottom: 7rem;
+        padding-top: 2rem;
+    }
+}
+
+// Custom breakpoint
+@media only screen and (min-width: 1300px) {
+    .header {
+        background-position-x: center;
+    }
+}

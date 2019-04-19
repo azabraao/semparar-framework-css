@@ -1,0 +1,118 @@
+/* step tutorial */
+
+.step {
+    @include display(flex);
+    @include flex-direction(column);
+    @include align-items(center);
+
+    .step__item {
+        @include display(flex);
+        @include flex-direction(column);
+        @include justify-content(flex-start);
+        @include align-items(center);
+    }
+     
+    .step__item:last-child {
+        margin-bottom: 0;
+    }
+    
+    .step__icon {
+        width: 6.5rem;
+        height: 6.5rem;
+        padding: .5rem;
+        margin-bottom: .5rem;
+
+        img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }
+    
+    .step__arrow {
+        @include display(flex);
+        @include justify-content(center);
+        margin: 1rem;
+
+        img {
+            @include rotate(90deg);
+            height: .45rem;
+            margin: 1.5rem;
+        }
+    }
+
+    .step__tile {
+        @include display(flex);
+        @include justify-content(center);
+        @include align-items(center);
+        border-radius: 0.62rem;
+        border: .1rem solid $grey-dark;
+        width: 9.37rem;
+        height: 9.37rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: .8rem;
+        position: relative;
+        padding: 1rem;
+    }
+    
+    .step__text {
+        width: 10.4rem;
+        font-size: .8rem;
+        align-self: center;
+        text-align: center;
+    }
+
+    .step__text--sm {
+        @extend .step__text;
+        width: 8rem;
+    }
+
+    .step__text--xs {
+        @extend .step__text;
+        width: 7rem;
+    }
+}
+
+@media only screen and (min-width: $mobile-up) {
+    .step {
+        @include align-items(flex-start);
+        @include flex-direction(row);
+        @include justify-content(center);
+        margin: 0 auto;
+        
+        .step__item {
+            margin-bottom: 0;
+        }
+
+        .step__arrow {
+            @include display(flex);
+            
+            img {
+                @include rotate(0deg);
+            }
+        }
+        
+        .arrow--1 {
+            height: 6.5rem;
+            @include display(flex);
+            @include justify-content(center);
+            @include align-items(center);
+        }
+
+        .arrow--2 {
+            margin: 0 1rem;
+            height: 9.37rem;
+            @include display(flex);
+            @include justify-content(center);
+            @include align-items(center);
+        }
+    }
+}
+
+@media only screen and (min-width: $mobile-up) and (max-width: $desktop-up) {
+    .step {
+        
+        .step__item {
+        }
+    }
+}

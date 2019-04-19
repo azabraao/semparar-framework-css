@@ -1,0 +1,14 @@
+.tile {
+    @include display(flex);
+    @include justify-content(center);
+    @include align-items(center);
+    border-radius: 0.62rem;
+    border: .1rem solid $grey-dark;
+    width: 9.37rem;
+    height: 9.37rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.25rem;
+    position: relative;
+    padding: 1rem;
+}
